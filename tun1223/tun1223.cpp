@@ -5,7 +5,8 @@ using namespace std;
 int main()
 {
 	//1
-	/*cout << "Years is -  ";
+	/*
+	cout << "Years is -  ";
 	int year;
 	cin >> year;
 	if (year % 10 != 0 && year % 4 == 0 || year % 400 == 0) {
@@ -14,7 +15,7 @@ int main()
 	else cout << "Is not leap year - 365 days";
 	*/
 	//2
-	string arr[]{ "\033[31m", "\033[32m", "\03333m", "\033[41m", "\033[42m", "\033[43m" };
+	/*string arr[]{ "\033[31m", "\033[32m", "\03333m", "\033[41m", "\033[42m", "\033[43m" };
 	int colorOfText, colorBack;
 	while (true) {
 		system("cls");
@@ -35,6 +36,29 @@ int main()
 		}
 	}
 	cout << arr[colorOfText-1] << arr[colorBack-1] << "\nText lalalal\033[0m";
+	*/
+	//3
+	int col, row;
+	while (true) {
+		system("cls");
+		cout << "col - ";
+		cin >> col;
+		if (col > 0) {
+			while (true) {
+				system("cls");
+				cout << "row - ";
+				cin >> row;
+				if (row > 0) break;
+			}
+			break;
+		}
+	}
+	for (int i = 0; i < col; i++) {
+		for (int j = 0; j < row; j++) {
+			cout << "*";
+		}
+		cout << "\n";
+	}
 }
 
 
