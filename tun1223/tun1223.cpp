@@ -38,7 +38,7 @@ int main()
 	cout << arr[colorOfText-1] << arr[colorBack-1] << "\nText lalalal\033[0m";
 	*/
 	//3
-	int col, row;
+	/*int col, row;
 	while (true) {
 		system("cls");
 		cout << "col - ";
@@ -54,11 +54,26 @@ int main()
 		}
 	}
 	for (int i = 0; i < col; i++) {
+		cout << "*";
 		for (int j = 0; j < row; j++) {
-			cout << "*";
+			if (j == row-1 || i == 0 || i == col-1) cout << "*";
+			else cout << " ";
 		}
 		cout << "\n";
+	}*/
+	/*srand(static_cast<int>(time(0)));
+	int arr[10];
+	for (int i = 0; i < 10; i++) {
+		arr[i] = rand() % 100;
+		cout << arr[i] << " ";
 	}
+
+	int min = arr[0], max = arr[0];
+	for (int i = 0; i < 10; i++) {
+		if (min > arr[i]) min = arr[i];
+		if (max < arr[i]) max = arr[i];
+	}
+	cout << "\nMin is - " << min << "\nMax is - " << max;*/
 }
 
 
